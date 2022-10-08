@@ -1,0 +1,30 @@
+{% extends 'first/base.html' %} 
+{% block title %}Home Page{% endblock title %}
+{% block content %} {% for task in tasks %}
+<div class="card mt-2">
+  <div class="card-header">
+    <strong>@{{task.author}}:</strong>
+    <strong>{{task.title}}</strong>
+  </div>
+  <div class="card-body d-flex flex-row justify-content-between">
+    <div>
+      <p>{{task.description}}</p>
+    </div>
+    <div>
+    {% if user == task.author %}
+     <form method="post">
+      {% csrf_token %}
+      <button type="submit" class="btn btn-danger" name="task-id" value="{{task.id}}">DELETE</button>
+     </form>
+      {% endif %} 
+    </div>
+
+    <div>STATUS:{{task.status}}</div>
+    <div class="card-footer">
+        <strong>DEADLINE</strong>
+      </div>
+    <div class="card-footer text-muted">{{task.deadlin}}</div>
+  </div>
+  {% empty %}
+  <p>No subtasks for this task assigned yet</p>
+  {% endfor %} {% endblock content %}

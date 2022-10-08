@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>{% block title %}
+            SELECTION CLUB
+            {% endblock title %}</title>
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+            <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap" rel="stylesheet">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+            .container {
+                background-image: url('../static/first/Non-Exclusive.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                font-family: 'Merriweather', serif;
+                color: white;
+                font-size: 1.3em;
+            }
+            .container h2 a{
+                text-decoration:none;
+                color:white;
+            }
+        </style>
+    </head>
+    <body>    
+{% load crispy_forms_tags %} {% block content %}
+<h1> YOU HAVE TO CHOOSE ONE OF THE CLUBS INORDER TO PROCEED BAED ON YOUR INTEREST</h1>
+<form method="post">
+  {% csrf_token %}
+  {{form|crispy}}
+  <div class="col-md-12 text-center">
+<button type="submit" class="btn btn-success">SUBMIT</button></div>
+</form>
+<div class="container">
+    <h2 style="color:black">1)IEEE (<a
+            href=https://drive.google.com/file/d/1ZsMVyumSMi8zvdIF29b_IdNhnPor71qJ/view?usp=drivesdk>DO
+            CLICK HERE to access IEEE-NITK VIDEO for more insights</a>)</h2>
+    <p>
+        
+        IEEE stands for the Institute of Electrical and Electronics Engineers. It is the world's largest
+        professional association advancing innovation and technological excellence for the benefit of
+        humanity.
+        Most people would look at the name and think, “I’m not in ECE or EEE, what is the point of joining
+        IEEE?” This is a completely false notion. IEEE-NITK has three main SIGs(Special Interest Groups)
+        which cater to students of all branches of engineering. So even if you are in Chemical or CS, IEEE
+        has something for you. After all, what’s in a name?
+        The three SIGs of IEEE are:
+    </p>
+    <p>
+       
+        a)CompSoc, is a conglomeration of students with a passion for Computer Science and Information
+        Technology.
+
+        b)Piston, is a special interest group dedicated to the engineering applications of Mechanical,
+        Automation, Civil, Chemical and Material Sciences.
+
+        c)Diode, is a team of students with a strong interest in the field of Electronics and Electrical
+        Science.
+    </p>
+    <p>
+
+        In general, non-circuit branches (Mech, Chemical, Meta, Mining, Civil) come under Piston, IT/CSE
+        under Python and ECE/EEE under Diode. However, you can join whichever SIG you want based on your
+        interest. It is not dependent on your branch.
+
+        IEEE regularly hosts workshops for the students where they can learn about things like Python,
+        JavaScript, etc (Python SIG), CATIA (Piston SIG) and Op-Amps (Diode SIG). In addition they host
+        various events and games throughout the year which are quite fun to attend.
+
+    </p>
+
+    <h2 style="color: black;">2)ACM(<a
+            href=https://drive.google.com/file/d/1D9QLh72x0U6SMRIFWia8rB8XVQUT6Y5i/view?usp=drivesdk>DO
+            CLICK HERE to access ACM-NITK VIDEO for more insights</a>)</h2>
+    <p>ACM NITK Chapter is a perfect assortment of a variety of skill sets and interest groups – both
+        technical and non-technical. The club consists of five special interest groups (SIGs) or ‘Yantras’
+        (‘cause we’re fancy that way)- </p>
+    <p>1. Vidyut: Electrical and Electronics
+        2. Saahitya: Literature and Fine Arts
+        3. Yantrika: For all things core
+        4. Kaaryavarta: Entrepreneurship and Business
+        5. Sanganitra: Computer Science</p>
+    <p>ACM also has 2 auxiliary SIGs: The social-initiatives group Krutagnata carries out activities like
+        Shiksha and Vidhyarthi to educate the students of the NITK Kannada Medium School.
+        ACM-W lives by its motto to inform, involve and inspire more and more women to take up engineering
+        and technology. Quashing all myths and prejudices, they conduct events- flagship event being
+        Resurgence- to instill confidence and high ambition in women.</p>
+    <p>Members have the freedom to join and work with any or all of the Yantras depending on their interests
+        and commitment. These SIGs regularly hold Knowledge Exchange Programs (KEPs) to introduce
+        beginner-level concepts from these domains.
+
+        ACM hosts multiple events throughout the year, their flagship event being Innovision, a week-long
+        event with all the SIGs conducting specific competitions.
+    </p>
+    <h2 style="color: black;">3)ROTARACT CLUB(<a
+            href="https://drive.google.com/file/d/12q7TFarUAh-VTrz---XOQVrRH8iWCFsN/view?usp=drivesdk">DO
+            CLICK HERE to access ROTARACT CLUB VIDEO for more insights</a>)</h2>
+    <p>The Rotaract Club, NITK Chapter, is a social welfare club affiliated to its international parent:
+        Rotary.
+
+        With a plethora of initiatives and social impact projects in place, they seek to aid the
+        underprivileged in times of need, while focusing on self development and matters such as animal
+        welfare. </p>
+    <p>The club hosts multiple interdisciplinary initiatives, the significant ones being: </p>
+    <ul class="circle">
+        <li>Rotech - Utilizing the technical competence of members for societal welfare oriented projects.
+        </li>
+        <li>Humans of Service - Connecting with highly reputed individuals working in the field of societal
+            impact and sharing their story. </li>
+        <li>Rotalks - Spreading awareness concerning critical issues via video interactions.</li>
+        <li> Mental Health Awareness Week, which stands out as a beautiful reminder to address our mental
+            health and place importance in self care. </li>
+    </ul>
+    <p>Other events include orphanage trips, the Karavali Marathon and the Roto Play, where money collected
+        for the play is donated to charity, etc.
+
+        The Rotaract club believes in a world where people unite and take action to create lasting change —
+        across the globe, in our communities, and in ourselves.</p>
+
+    <h2 style="color:black">4)IE(<a
+            href="https://drive.google.com/file/d/1H50B3JNiKlgp9XAU2kD-e0kSANySQQHX/view?usp=drivesdk">DO
+            CLICK HERE to access IE CLUB VIDEO for more insights</a>)</h2>
+
+    <p>One of the oldest professional societies on campus the institution of Engineers or IE was established
+        in 1969. It is a student organisation affiliated to the Institution of Engineers, India. The club's
+        primary focus is to help members develop diverse skills.IE also has five auxiliary SIGs:</p>
+    <ul>
+        <li> Script</li>
+        <li>Robotics</li>
+        <li>Capital</li>
+        <li>Tectonic</li>
+        <li>Vriddhi (Social initiatives)</li>
+    </ul>
+    <p>Members have the freedom to join and work with any or all of the SIGs depending on their interests
+        and commitment. These SIGs regularly hold Knowledge Exchange Programs (KEPs) to introduce
+        beginner-level concepts from these domains.
+        Moreover, there are internal hackathons and Group Discussion sessions.</p>
+    <p>IE hosts multiple events throughout the year, flagship event includes:</p>
+    <ul>
+        <li>KOTH (the whole of IE conducts events)</li>
+        <li>Enigma (they are conducted by each SIG)</li>
+        <li> Samwad (Interaction with alumni for technical topics)</li>
+        <li> Spark (TEDx series of IE) and many more.</li>
+    </ul>
+    <h2 style="color:black;">5)ISTE(<a
+            href="https://drive.google.com/file/d/1XBnL4OpTDbqwJqT7a-V-FkEK8NRdft3T/view?usp=drivesdk">DO
+            CLICK HERE to access ISTE VIDEO for more insights</a>)</h2>
+    <p>The Indian Society for Technical Education also known as ISTE is a nationally recognized professional
+        nonprofit making society which contributes in various missions of the union government.It is the
+        only national organisation of educators in the field of engineering and technology. In our college
+        ISTE organizes some of the best events for the students, most of which are not very technical.</p>
+    <p>One of their most renowned events for which nearly 85% of the freshers participate every year is
+        Scotland Yard! It's a function as they describe it. Be sure not to miss it!
+    </p>
+    <p>ISTE is also one of the few clubs to conduct some really useful workshops especially for the first
+        years which include Arduino, AutoCAD and Aeronautics. The festival of technology that they conduct
+        is called Transcend and is a phenomenon every year.
+    </p>
+    <h2 style="color:black">6)IET(<a
+            href="https://drive.google.com/file/d/1K-NOwzE3V3HtEOB1RwNDWFFSjlen5dox/view?usp=drivesdk">DO
+            CLICK HERE to access IET CLUB VIDEO for more insights</a>)</h2>
+    <p>The Institute of Engineering Technology (IET) is affiliated to IET London, which is one of the
+        world’s leading professional societies for the engineering and technology community . They conduct
+        workshops and seminars throughout the academic calendar striving to impact relevant skills to the
+        students. Apart from this, they strive to invite eminent personalities to conduct lectures for the
+        benefit of the club members and keeping doors opened for others interested. </p>
+    <p>IET NITK consists of five different Special Interest Groups:</p>
+    <ul>
+        <li>Cipher SIG, brings together people interested in Computer Science and Information Technology.
+        </li>
+        <li>Rovisp SIG, brings together people who are passionate about Electronics and Electrical
+            Technology.</li>
+        <li>Torsion SIG, brings together people interested in Mechanical, Civil, Chemical and Material
+            Sciences.</li>
+        <li>Inkheart SIG, is the new Lit&Phil for people who are passionate about literature, music etc.
+        </li>
+        <li>Medium SIG, is dedicated to people interested in Media and Marketing.</li>
+    </ul>
+</div>
+{% endblock content %}
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
