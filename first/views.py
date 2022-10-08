@@ -4,16 +4,6 @@ from .models import Task
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import login,logout,authenticate
 # Create your views here.
-#superuser:taruser
-#password:1@2@3
-#username:taru
-#password:321321321@
-#username:tsh
-#password:@321321321
-#username:
-#password:return render(request,'first/base.html')
-#username:one
-#password:1one1one1one
 
 @login_required(login_url='/login')
 def base(request):
