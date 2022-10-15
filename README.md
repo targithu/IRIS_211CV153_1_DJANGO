@@ -26,7 +26,7 @@ ADD TASKS(similar UI used to add subtasks but it has additional features as it i
 ![ADD TASKS](https://user-images.githubusercontent.com/101446457/195985597-894bdf15-6ba9-44f3-8652-546e4f04937d.png)  
 IT IS RESPONSIVE WEB APP!  
 ### References used:  
--[bootstrap]https://getbootstrap.com/docs/5.2/getting-started/introduction/  
+-[bootstrap](https://getbootstrap.com/docs/5.2/getting-started/introduction/  )
 -[documentation](https://docs.djangoproject.com/en/4.0/)  
  ### UNIMPLEMENTED:  
  ***WASN'T ABLE TO INTEGRATE GOOGLE DRIVE AND CALENDAR API'S.***
