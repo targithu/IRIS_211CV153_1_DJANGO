@@ -1,4 +1,3 @@
-from email.policy import default
 from random import choice
 from django.db import models
 import datetime
