@@ -26,7 +26,7 @@ ADD TASKS:
 IT IS RESPONSIVE WEB APP!  
 ### References used:  
  -[documentation](https://docs.djangoproject.com/en/4.0/)  
- ###UNIMPLEMENTED:  
+ ### UNIMPLEMENTED:  
  ***WASN'T ABLE TO INTEGRATE GOOGLE DRIVE AND CALENDAR API'S.***
  
  
