@@ -20,9 +20,10 @@ these were taken at 67% zoom to ensure the ui visible
 ![Screenshot (97)](https://user-images.githubusercontent.com/101446457/195915576-7427be7a-e67d-42cf-a1c3-634e5c34bc95.png)
 ![Screenshot (98)](https://user-images.githubusercontent.com/101446457/195915585-d1fe6fcd-81ef-494a-8da9-0ff3a1f6e14e.png)
 ![Screenshot (99)](https://user-images.githubusercontent.com/101446457/195915592-3d56cd1a-47de-4b0b-b1ed-b6d67b7eda00.png)
-![THIS IS THE VIEW TASKS PAGE](https://user-images.githubusercontent.com/101446457/195913631-a3c0909d-6c01-463c-89ae-6efdae47076d.png)
-ADD TASKS:
-![ADD TASKS)](https://user-images.githubusercontent.com/101446457/195985418-02262a7a-b3b8-4af9-ab96-d3fcec6c5953.png)
+VIEW TASKS(similar UI used to view subtasks but it has additional features as it is visible in models.py):  
+![VIEW TASKS)](https://user-images.githubusercontent.com/101446457/195985418-02262a7a-b3b8-4af9-ab96-d3fcec6c5953.png)  
+ADD TASKS(similar UI used to view subtasks but it has additional features as it is visible in models.py):  
+![ADD TASKS](https://user-images.githubusercontent.com/101446457/195985597-894bdf15-6ba9-44f3-8652-546e4f04937d.png)  
 IT IS RESPONSIVE WEB APP!  
 ### References used:  
 -[bootstrap]https://getbootstrap.com/docs/5.2/getting-started/introduction/  
