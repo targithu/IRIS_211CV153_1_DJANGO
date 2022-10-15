@@ -10,8 +10,6 @@ from django.contrib.auth import login,logout,authenticate
 #password:321321321@
 #username:tsh
 #password:@321321321
-#username:tr
-#password:return render(request,'first/base.html')
 #username:one
 #password:1one1one1one
 
@@ -64,6 +62,9 @@ def subtasks(request):
     else:
         form=SubTaskForm()
     return render(request,'first/subtasks.html',{"form":form}) 
+@login_required(login_url='/login')
+def submit(request):
+     return render(request,'first/submit.html') 
 @login_required(login_url='/login')
 def none(request):
     if request.method=='POST':
