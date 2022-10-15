@@ -1,0 +1,12 @@
+.container {
+    background-image: url('Non-Exclusive.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Merriweather', serif;
+    color: white;
+    font-size: 1.3em;
+}
+.container h2 a{
+    text-decoration:none;
+    color:white;
+}
