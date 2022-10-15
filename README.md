@@ -14,7 +14,7 @@ python manage.py startapp first
 Successfully setup a Login,Register Page and The SuperUser with access to banning users/CRUD tasks with SQLite as the Database.  
 ***Also the User Can fill a maximum of only One CLUB based on his/her interest based on an attractive page with info of all clubs
 as well as videos attached with them.***  
-Added Dashboard for a User wherein the user can view all the tasks attached to his/her club and ***has access to delete as well as edit only his/her task also can see only his/her subtasks*** along with the deadline,social media platform set.  
+Added Dashboard for a User wherein the user can view all the tasks attached to his/her club and ***has access to delete as well as edit only his/her task also can see only his/her subtasks*** along with the deadline,social media platform set,submitting assignment.  
 ONLY AFTER FILLING THE FOLLOWING PAGE CAN the ***LOGGEDINUSER*** VIEW TASKS IN HIS/HER CLUB:
 these were taken at 67% zoom to ensure the ui visible
 ![Screenshot (97)](https://user-images.githubusercontent.com/101446457/195915576-7427be7a-e67d-42cf-a1c3-634e5c34bc95.png)
