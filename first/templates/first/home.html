@@ -9,8 +9,9 @@
     <div>
       <h5 class="card-title">{{task.title}}</h5>
       {% if user == task.author %}
-      <a href="/subtasks">CLICK TO ADD SUBTASK</a>
-      <a href="/subtask">CLICK TO VIEW SUBTASKS</a>
+      <a href="/subtasks"style="text-decoration:none;color:red">CLICK TO ADD SUBTASK</a>
+      <a href="/subtask" style="text-decoration:none;color:red">CLICK TO VIEW SUBTASKS</a>
+         <a href="/submit" style="text-decoration:none;color:red">CLICK TO SUBMIT SUBTASKS</a>
       {%endif%}
       <p>{{task.description}}</p>
     </div>
