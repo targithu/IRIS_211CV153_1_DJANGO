@@ -25,7 +25,8 @@ ADD TASKS:
 ![ADD TASKS)](https://user-images.githubusercontent.com/101446457/195985418-02262a7a-b3b8-4af9-ab96-d3fcec6c5953.png)
 IT IS RESPONSIVE WEB APP!  
 ### References used:  
- -[documentation](https://docs.djangoproject.com/en/4.0/)  
+-[bootstrap]https://getbootstrap.com/docs/5.2/getting-started/introduction/  
+-[documentation](https://docs.djangoproject.com/en/4.0/)  
  ### UNIMPLEMENTED:  
  ***WASN'T ABLE TO INTEGRATE GOOGLE DRIVE AND CALENDAR API'S.***
  
