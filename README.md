@@ -21,12 +21,16 @@ these were taken at 67% zoom to ensure the ui visible
 ![Screenshot (98)](https://user-images.githubusercontent.com/101446457/195915585-d1fe6fcd-81ef-494a-8da9-0ff3a1f6e14e.png)
 ![Screenshot (99)](https://user-images.githubusercontent.com/101446457/195915592-3d56cd1a-47de-4b0b-b1ed-b6d67b7eda00.png)
 ![THIS IS THE VIEW TASKS PAGE](https://user-images.githubusercontent.com/101446457/195913631-a3c0909d-6c01-463c-89ae-6efdae47076d.png)
-ADD TASKS(screenshot taken while on a different username):
-![ADD TASKS PAGE](https://user-images.githubusercontent.com/101446457/195914162-64eff648-e6ab-4682-815f-a30d8f5f1526.png)
+ADD TASKS:
+![ADD TASKS)](https://user-images.githubusercontent.com/101446457/195985418-02262a7a-b3b8-4af9-ab96-d3fcec6c5953.png)
 IT IS RESPONSIVE WEB APP!  
 ### References used:  
  -[documentation](https://docs.djangoproject.com/en/4.0/)
+ ###UNIMPLEMENTED:
+ ***WASN'T ABLE TO INTEGRATE GOOGLE DRIVE AND CALENDAR API'S.***
  
+ 
+
 
 
 
