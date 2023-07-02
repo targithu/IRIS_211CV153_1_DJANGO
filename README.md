@@ -1,27 +1,79 @@
-### Requirements:
- - Python3  
-### Instructions(In Terminal):  
-```python  
-virtualenv venv  
-source ./venv/bin/activate
-pip install -r requirements.txt  
-django-admin startproject task1  
-cd task1  
-python manage.py runserver  
-python manage.py startapp first  
-```
-### Tasks Completed :
-<i>Successfully setup a Login,Register Page and The SuperUser with access to banning users/CRUD tasks with SQLite as the Database.<i/>  
-<i>***Also the User Can fill a maximum of only One CLUB based on his/her interest based on an attractive page with info of all clubs
-as well as videos attached with them.***<i/>    
-<i>Added Dashboard for a User wherein the user can view all the tasks attached to his/her club and ***has access to delete as well as edit only his/her task also can see only his/her subtasks*** along with the deadline,social media platform set,submitting assignment<i/>.    
-ONLY AFTER FILLING THE FOLLOWING PAGE CAN the ***LOGGEDINUSER*** VIEW TASKS IN HIS/HER CLUB  
-This ia Portal where all the CRUD Operations have been performed along with authorization and authentication.
-### References used:  
--[bootstrap](https://getbootstrap.com/docs/5.2/getting-started/introduction/  )
--[DJANGO](https://docs.djangoproject.com/en/4.0/)
- 
- 
+# ClubApp
+
+ClubApp is a web application that enables club members to create and manage tasks and subtasks associated with their clubs. It provides a platform for users to collaborate, set deadlines, and specify social media platforms for each task.
+
+## Requirements
+
+- Python 3.x
+- Django (see requirements.txt for specific versions of dependencies)
+
+## Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/tarun-hegde/Social-Media-Task-Organizer.git
+   ```
+
+2. Create and activate a virtual environment:
+
+   ```bash
+   virtualenv venv
+   source venv/bin/activate
+   ```
+
+3. Install the project dependencies:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. Apply database migrations:
+
+   ```bash
+   python manage.py makemigrations
+   python manage.py migrate
+   ```
+
+5. Start the development server:
+
+   ```bash
+   python manage.py runserver
+   ```
+
+6. Access the application locally at `http://localhost:8000`.
+
+## Usage
+
+- Visit the home page to register a new account or login if you already have one.
+- After logging in, you will be directed to the dashboard where you can view and manage tasks associated with your club.
+- To create a new task, click on the "Create Task" button and provide the necessary details such as the task title, description, deadline, and social media platform.
+- Once a task is created, it will be listed in the dashboard with its details displayed, including the assigned deadline and social media platform.
+- To delete a task, click on the "Delete" button next to the task you want to remove. Confirm the deletion when prompted.
+- For each task, you can also add subtasks by clicking on the "Add Subtask" button. Specify the subtask details such as title, description, and any additional information.
+- Subtasks will be displayed under their respective parent tasks in the dashboard.
+- Club members can view and manage only their club's tasks and subtasks. The dashboard provides a personalized view of the user's assigned tasks.
+
+## Features
+
+- User registration and login with authentication.
+- Dashboard displaying club-specific tasks and subtasks.
+- Create, edit, and delete tasks with associated details such as title, description, deadline, and social media platform.
+- Add subtasks to tasks, providing additional details and descriptions.
+- Deadline tracking for tasks and subtasks.
+- Personalized edit for each club member, restricted to their assigned tasks.
+- Responsive design for seamless usage across different devices.
+
+## Contributing
+
+Contributions are welcome! If you'd like to contribute to ClubApp, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make the necessary changes and commit them.
+4. Push your branch to your forked repository.
+5. Submit a pull request with a description of your changes.
+
 
 
 
