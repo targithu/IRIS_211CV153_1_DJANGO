@@ -1,12 +1,63 @@
-.container {
-    background-image: url('Non-Exclusive.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: 'Merriweather', serif;
-    color: white;
-    font-size: 1.3em;
-}
-.container h2 a{
-    text-decoration:none;
-    color:white;
-}
+body {
+    background-color: aqua;
+  }
+
+  .card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  .card-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .card-text {
+    margin-bottom: 15px;
+  }
+
+  .card-buttons {
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  @media (max-width: 992px) {
+    .card {
+      width: 100%;
+    }
+
+  }
+
+  @media (max-width: 568px) {
+    .card-title {
+      font-size: 18px;
+    }
+
+    .card-text {
+      flex-direction: vertical; 
+    }
+    .card-buttons {
+      flex-direction: vertical; 
+    }
+  }
+
+  @media (max-width: 400px) {
+    .card-title {
+      font-size: 16px;
+    }
+
+    .card-text {
+      margin-bottom: 5px;
+    }
+    .card-buttons {
+      flex-direction: vertical; 
+    }
+    
+  }

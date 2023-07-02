@@ -18,18 +18,7 @@ class Task(models.Model):
     socialmedia=models.CharField(max_length=9,choices=MEDIA_CHOICES,default="LinkedIn")
     def __str__(self):
         return  f"{self.title} {self.description} {self.deadline} {self. socialmedia}"
-class Clubs(models.Model):
-    choiceS=(
-    ('1', "IEEE"),
-    ('2', "ACM"),
-    ('3', "ROTARACT CLUB"),
-    ('4', "IE"),
-    ('5', "ISTE"),
-    ('6', "IET"),    
-    )
-    clubselected=models.CharField(max_length=16,choices=choiceS,default="IEEE")
-    def __str__(self):
-        return self.clubselected
+
 class SubTasks(Task):
     status=models.BooleanField(default=False)
     deadlin=models.DateField(validators=[MinValueValidator(datetime.date.today)],null=True)

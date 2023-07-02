@@ -1,0 +1,44 @@
+
+body {
+    background-color: aqua;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    min-height: 100vh;
+  }
+  form {
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  .form-label {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  h1 {
+    color: white;
+  }
+  .form-control:hover {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+  .form-control:not(:placeholder-shown) {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+  .card {
+    background-color:#000f26;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+    margin: 0 auto;
+    max-width: 500px;
+    width: 100%;
+  }
+  .card:hover {
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+  }

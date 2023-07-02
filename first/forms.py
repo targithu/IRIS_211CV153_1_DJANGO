@@ -1,7 +1,7 @@
 from django import forms
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
-from .models import SubTasks, Task,Clubs
+from .models import SubTasks, Task
 class RegistrationForm(UserCreationForm):
     email=forms.EmailField(required=True)
     class Meta:
@@ -16,10 +16,6 @@ class TaskForm(forms.ModelForm):
         widgets={
             'deadline':DateInput(),
         }
-class ClubForm(forms.ModelForm):
-    class Meta:
-        model=Clubs
-        fields=["clubselected"]
 class SubTaskForm(forms.ModelForm):
     class Meta:
         model=SubTasks
