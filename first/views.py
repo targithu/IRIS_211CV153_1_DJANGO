@@ -3,21 +3,8 @@ from .forms import RegistrationForm,TaskForm,SubTaskForm
 from .models import Task,SubTasks
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import login,logout,authenticate
-# Create your views here.
-#superuser:taruser
-#password:1@2@3
-#username:taru
-#password:321321321@
-#username:tsh
-#password:@321321321
-#username:one
-#password:1one1one1one
-
-@login_required(login_url='/login')
 def base(request):
  return render(request,'first/base.html')
-def case(request):
-    return render(request,'first/case.html')
 @login_required(login_url='/login')
 def view_tasks(request):
     tasks=Task.objects.all()

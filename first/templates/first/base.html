@@ -6,16 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap" rel="stylesheet">
-
+   
 
     <!-- Add Crispy Forms CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/crispy-bootstrap/1.0.1/crispy-bootstrap.min.css" integrity="sha512-VdZ7l2QJG/Zn+mV2z6DTyU3jYf9XuJ7VZg6JZd7Vj+0DvVD8g+DRhNxfBbP0H9X0G5+5c5ZC3qfLlKjvBfzSsg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light text-info">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light text-info ">
         <div class="container-fluid">
-            <a class="navbar-brand" href="">CO</a>
+            <a class="navbar-brand" href="{% url 'base' %}">ClubApp</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -51,6 +51,13 @@
     </nav>
     
 {% block content %}
+<link rel="stylesheet" href="{% static 'first/base.css' %}">
+<div class="container">
+    <h1>Welcome to ClubApp</h1>
+    <p>
+      ClubApp is a web application that enables club members to create and manage tasks and subtasks associated with their clubs. It provides a platform for users to collaborate, set deadlines, and specify social media platforms for each task.
+    </p>
+  </div>
         {% endblock content %}
   
 </body>
