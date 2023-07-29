@@ -4,46 +4,44 @@
 {% block content %}
 <link rel="stylesheet" href="{% static 'first/style.css' %}">
   
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <center>
-          <h1 >Club Tasks</h1>
-        </center>
-      </div>
-    </div>
-    <div class="row">
-      {% for task in tasks %}
-      <div class="col-lg-6">
-        <div class="card text-white bg-dark">
-          {% if user == task.author %}
-          <div class="card-body text-center">
-            <h5 class="card-title">{{ task.title }}</h5>
-            <p class="card-text">{{ task.description }}</p>
-            <p class="card-text"><strong>By </strong>{{ task.author }} on {{ task.deadline }} at {{ task.socialmedia }}</p>
-  
-            <div class="card-buttons">
-              <a href="{% url 'add_subtask' %}" class="btn btn-success">Add Subtask</a>
-              <a href="/subtask" class="btn btn-info ">View Subtasks</a>
-              <form method="post">
-                {% csrf_token %}
-                <button type="submit" class="btn btn-danger" name="task-id" value="{{task.id}}">Delete Task</button>
-              </form>
-            </div>
-          </div>
-          {% endif %}
-        </div>
-      </div>
-      {% empty %}
-      <div class="col">
-        <p>No Event Held Yet</p>
-      </div>
-      {% endfor %}
-    </div>
-  
-
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <center>
+        <h1>Club Tasks</h1>
+      </center>
     </div>
   </div>
-  
+  <div class="row">
+    {% for task in tasks %}
+    {% if user == task.author %}
+    <div class="col-lg-6">
+      <div class="card text-white bg-dark mb-3">
+        <div class="card-body">
+          <div class="card-header d-flex justify-content-between">
+            <h5 class="card-title">{{ task.title }}</h5>
+            <p class="mb-0">Platform: {{ task.socialmedia }}</p>
+          </div>
+          <p class="card-text">{{ task.description }}</p>
+          <p class="card-text"><strong>CLUB: </strong>{{ task.club }} by {{ task.deadline }}</p>
+        </div>
+        <div class="card-footer d-flex justify-content-between">
+          <a href="{% url 'add_subtask' %}" class="btn btn-success">Add Subtask</a>
+          <a href="{% url 'subtask' %}" class="btn btn-info">View Subtasks</a>
+          <form method="post">
+            {% csrf_token %}
+            <button type="submit" class="btn btn-danger" name="task-id" value="{{ task.id }}">Delete Task</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    {% endif %}
+    {% empty %}
+    <div class="col">
+      <p>No Task added yet</p>
+    </div>
+    {% endfor %}
+  </div>
+</div>
 
 {% endblock content %}

@@ -1,19 +1,16 @@
 {% extends 'first/base.html' %}
 {% load static %}
-{% block title %}SUBTASK PAGE{% endblock%}
-{% load crispy_forms_tags %} {% block content %}
+{% block title %}ADD SUBTASK{% endblock %}
+{% load crispy_forms_tags %}
+{% block content %}
 <link rel="stylesheet" href="{% static 'first/login.css' %}">
-  {% load crispy_forms_tags %}
-  <h2 class="text-center" style="font-family:poppins text-white">Add Subtask</h2>
 <div class="container">
-  
-    <form method="post" class="rounded-4 bg-black  text-center text-white">
-      
-      {% csrf_token %}
-      {{ form|crispy }}
-      <div class="text-center">
-        <button type="submit" class="btn btn-info">Add Task</button>
-    </div>
-  </form>
-  </div>
+    <form method="post" class="rounded-4 bg-black text-center text-white">
+        {% csrf_token %}
+        {{ form|crispy }}
+        <div class="text-center">
+            <button type="submit" class="btn btn-info">Add Subtask</button>
+        </div>
+    </form>
+</div>
 {% endblock %}

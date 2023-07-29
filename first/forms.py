@@ -12,14 +12,14 @@ class DateInput(forms.DateInput):
 class TaskForm(forms.ModelForm):
     class Meta:
         model=Task
-        fields=["title","description","deadline","socialmedia"]
+        fields=["title","club","description","deadline","socialmedia"]
         widgets={
             'deadline':DateInput(),
         }
 class SubTaskForm(forms.ModelForm):
     class Meta:
         model=SubTasks
-        fields=["title","description","deadlin","status"]
+        fields=["sub_title","sub_description","sub_deadline"]
         widgets={
-            'deadlin':DateInput(),
+            'sub_deadline':DateInput(),
         }

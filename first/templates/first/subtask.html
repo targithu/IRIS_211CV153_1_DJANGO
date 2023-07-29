@@ -1,39 +1,34 @@
-{% extends 'first/base.html' %} 
+{% extends 'first/base.html' %}
 {% load static %}
-{% block title %}Home Page{% endblock title %}
+{% block title %}Subtasks{% endblock title %}
 {% block content %}
 <link rel="stylesheet" href="{% static 'first/style.css' %}">
-  <div class="container ">
+<div class="container">
     <div class="row">
-      <div class="col">
-        <center><h1 >Subtasks</h1></center>
-      </div>
+        <div class="col">
+            <center><h1>Subtasks</h1></center>
+        </div>
     </div>
     <div class="row text-white">
-      {% for task in tasks %}
-      <div class="col-lg-6">
-        <div class="card text-white bg-dark">
-          
-          <div class="card-body text-center ">
-            <h5 class="card-title">{{ task.title }}</h5>
-            <p class="card-text">{{ task.description }}</p>
-            <p class="card-text"><strong>By </strong>{{ task.author }},</p>
-            {% if user == task.author %}
-            <form method="post">
-              {% csrf_token %}
-              <button type="submit" class="btn btn-danger" name="task-id" value="{{ task.id }}">Delete</button>
-            </form>
-            {% endif %}
-          </div>
-          
+        {% for subtask in task.subtasks.all %}
+        <div class="col-lg-6">
+            <div class="card text-white bg-dark">
+                <div class="card-body text-center">
+                    <h5 class="card-title">{{ subtask.sub_title }}</h5>
+                    <p class="card-text">{{ subtask.sub_description }}</p>
+                    <form method="post">
+                        {% csrf_token %}
+                        <button type="submit" class="btn btn-danger" name="subtask-id" value="{{ subtask.id }}">Delete</button>
+                    </form>
+      
+                </div>
+            </div>
         </div>
-      </div>
-      {% empty %}
-      <div class="col">
-        <p>No Event Held Yet</p>
-      </div>
-      {% endfor %}
+        {% empty %}
+        <div class="col">
+            <p>No Subtasks Found</p>
+        </div>
+        {% endfor %}
     </div>
-  </div>
-  
-  {% endblock content %}
+</div>
+{% endblock content %}
