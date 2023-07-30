@@ -1,9 +1,9 @@
 {% extends 'first/base.html' %}
 {% load static %}
 {% block title %}ADD SUBTASK{% endblock %}
-{% load crispy_forms_tags %}
 {% block content %}
 <link rel="stylesheet" href="{% static 'first/login.css' %}">
+{% load crispy_forms_tags %}
 <div class="container">
     <form method="post" class="rounded-4 bg-black text-center text-white">
         {% csrf_token %}

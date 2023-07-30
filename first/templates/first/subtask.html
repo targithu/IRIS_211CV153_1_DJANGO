@@ -3,24 +3,20 @@
 {% block title %}Subtasks{% endblock title %}
 {% block content %}
 <link rel="stylesheet" href="{% static 'first/style.css' %}">
-<div class="container">
+<div class="container text-white">
     <div class="row">
         <div class="col">
-            <center><h1>Subtasks</h1></center>
+            <center><h1>Subtasks for {{ task.title }} </h1></center>
         </div>
     </div>
-    <div class="row text-white">
-        {% for subtask in task.subtasks.all %}
+    <div class="row">
+        {% for subtask in subtasks %}
         <div class="col-lg-6">
-            <div class="card text-white bg-dark">
-                <div class="card-body text-center">
+            <div class="card mb-4 text-white bg-dark">
+                <div class="card-body">
                     <h5 class="card-title">{{ subtask.sub_title }}</h5>
                     <p class="card-text">{{ subtask.sub_description }}</p>
-                    <form method="post">
-                        {% csrf_token %}
-                        <button type="submit" class="btn btn-danger" name="subtask-id" value="{{ subtask.id }}">Delete</button>
-                    </form>
-      
+                    <p class="card-text">Deadline: {{ subtask.sub_deadline }}</p>
                 </div>
             </div>
         </div>

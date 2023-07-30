@@ -6,7 +6,7 @@
 {% load crispy_forms_tags %}
 <div class="container">
     <div class="card">
-      <h1 class="text-center mb-4"><u>Club Login</u></h1>
+      <h1 class="text-center mb-4"><u>User Login</u></h1>
       <form method="post" class="text-white">
         {% csrf_token %}
         {{ form|crispy }}
@@ -14,7 +14,7 @@
           <div class="form-group">
             <button type="submit" class="btn btn-outline-info">Login</button>
           </div>
-          <p class="mb-0 text-white">Did not register? Click<a href="/sign-up" style="text-decoration:none;color:white"> here</a></p>
+          <p class="mb-0 text-white">Don't have an account? Sign Up <a href="/sign_up" style="text-decoration:none;color:aqua"> HERE</a></p>
         </div>
       </form>
     </div>

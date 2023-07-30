@@ -3,15 +3,15 @@
 {% block title %}Home Page{% endblock title %}
 {% block content %}
 <link rel="stylesheet" href="{% static 'first/style.css' %}">
-  
 <div class="container">
   <div class="row">
     <div class="col">
       <center>
-        <h1>Club Tasks</h1>
+        <h1 class="text-white"><u>{{ tasks.0.author }} Club Tasks</u></h1>
+
       </center>
-    </div>
   </div>
+</div>
   <div class="row">
     {% for task in tasks %}
     {% if user == task.author %}
@@ -26,8 +26,8 @@
           <p class="card-text"><strong>CLUB: </strong>{{ task.club }} by {{ task.deadline }}</p>
         </div>
         <div class="card-footer d-flex justify-content-between">
-          <a href="{% url 'add_subtask' %}" class="btn btn-success">Add Subtask</a>
-          <a href="{% url 'subtask' %}" class="btn btn-info">View Subtasks</a>
+          <a href="{% url 'add_subtask' task.id %}" class="btn btn-success">Add Subtask</a>
+          <a href="{% url 'subtask' task.id %}" class="btn btn-info">View Subtasks</a>
           <form method="post">
             {% csrf_token %}
             <button type="submit" class="btn btn-danger" name="task-id" value="{{ task.id }}">Delete Task</button>
@@ -43,5 +43,5 @@
     {% endfor %}
   </div>
 </div>
-
+</div>
 {% endblock content %}

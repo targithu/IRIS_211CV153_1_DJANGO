@@ -52,16 +52,14 @@ ClubApp is a web application that enables club members to create and manage task
 - To delete a task, click on the "Delete" button next to the task you want to remove. Confirm the deletion when prompted.
 - For each task, you can also add subtasks by clicking on the "Add Subtask" button. Specify the subtask details such as title, description, and any additional information.
 - Subtasks will be displayed under their respective parent tasks in the dashboard.
-- Club members can view and manage only their club's tasks and subtasks. The dashboard provides a personalized view of the user's assigned tasks.
 
 ## Features
 
 - User registration and login with authentication.
 - Dashboard displaying club-specific tasks and subtasks.
-- Create, edit, and delete tasks with associated details such as title, description, deadline, and social media platform.
+- Create, view, and delete tasks with associated details such as title, description, deadline, and social media platform.
 - Add subtasks to tasks, providing additional details and descriptions.
 - Deadline tracking for tasks and subtasks.
-- Personalized edit for each club member, restricted to their assigned tasks.
 - Responsive design for seamless usage across different devices.
 
 ## Contributing
