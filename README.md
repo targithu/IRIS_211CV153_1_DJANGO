@@ -3,7 +3,11 @@
 ClubApp is a web application that enables club members to create and manage tasks and subtasks associated with their clubs. It provides a platform for users to collaborate, set deadlines, and specify social media platforms for each task.
 ## Demo
 
-https://github.com/tarun-hegde/Social-Media-Task-Organizer/assets/101446457/f4b7b592-f127-4e64-9452-1a583e1203cb
+
+https://github.com/tarun-hegde/Social-Media-Task-Organizer/assets/101446457/9590ea42-8a86-4eac-a57b-2b099ce0f58c
+
+
+
 
 ## Requirements
 
